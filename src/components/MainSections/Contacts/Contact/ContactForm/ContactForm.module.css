@@ -1,0 +1,76 @@
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form button {
+    max-width: 170px;
+    margin: 0 auto 15px;
+    display: block;
+    font: 400 14px/1.2 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 7px 20px;
+    border: none;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    outline-color: transparent;
+    color: #fff;
+}
+
+.contact_form button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    width: 50%;
+    background: #e9548d;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+    margin: 0 auto;
+}
+
+.contact_form button:hover {
+    color: #fff
+}
+
+.contact_form button:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.form_control {
+    height: calc(1.5em + .75rem + 2px);
+    width: 100%;
+    font-family: inherit;
+    font-size: calc(1rem * 0.835);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #4a4a4a;
+    outline: transparent;
+    transition: border 0.4s ease-in-out;
+    background: #2a2a2c;
+}
+
+.form_control:focus {
+    border: 1px solid #b1b1b1;
+}
+
+.form_field {
+    margin-bottom: 1rem;
+}
+
+.form_field textarea {
+    padding: .375rem 1rem;
+    resize: vertical;
+    height: 146px;
+}

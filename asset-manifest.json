@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2cce8147.chunk.css",
-    "main.js": "/portfolio/static/js/main.583a4e09.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.583a4e09.chunk.js.map",
-    "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
-    "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-    "static/js/2.4f057907.chunk.js": "/portfolio/static/js/2.4f057907.chunk.js",
-    "static/js/2.4f057907.chunk.js.map": "/portfolio/static/js/2.4f057907.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.579f4f49.chunk.css",
+    "main.js": "/portfolio/static/js/main.4b57d238.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4b57d238.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.3d160305.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.3d160305.js.map",
+    "static/js/2.76071351.chunk.js": "/portfolio/static/js/2.76071351.chunk.js",
+    "static/js/2.76071351.chunk.js.map": "/portfolio/static/js/2.76071351.chunk.js.map",
+    "static/js/3.9371e5d7.chunk.js": "/portfolio/static/js/3.9371e5d7.chunk.js",
+    "static/js/3.9371e5d7.chunk.js.map": "/portfolio/static/js/3.9371e5d7.chunk.js.map",
+    "static/css/4.ee94dc7a.chunk.css": "/portfolio/static/css/4.ee94dc7a.chunk.css",
+    "static/js/4.94b973f9.chunk.js": "/portfolio/static/js/4.94b973f9.chunk.js",
+    "static/js/4.94b973f9.chunk.js.map": "/portfolio/static/js/4.94b973f9.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ad9591c635c4ec5b679bc3c2cd57028b.js": "/portfolio/precache-manifest.ad9591c635c4ec5b679bc3c2cd57028b.js",
+    "precache-manifest.1fe08438af154009f31678505cfb9185.js": "/portfolio/precache-manifest.1fe08438af154009f31678505cfb9185.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/portfolio/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/portfolio/static/media/logo.5d5d9eef.svg"
+    "static/css/4.ee94dc7a.chunk.css.map": "/portfolio/static/css/4.ee94dc7a.chunk.css.map",
+    "static/css/main.579f4f49.chunk.css.map": "/portfolio/static/css/main.579f4f49.chunk.css.map",
+    "static/media/prev_black.svg": "/portfolio/static/media/prev_black.007808f3.svg"
   }
 }

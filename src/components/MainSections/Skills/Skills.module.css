@@ -1,0 +1,375 @@
+.main {
+
+}
+
+.skills {
+    /*background: #dbf5dd;*/
+    background: #1f1f20;
+    color: #fff;
+}
+
+.container {
+    max-width: 1240px;
+    width: 80%;
+    margin: 0 auto;
+    /*border: 1px solid;*/
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.container h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 1em;
+    position: relative;
+    letter-spacing: 5px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container h3:after {
+    content: '';
+    display: block;
+    background: #e9548d;
+    width: 55px;
+    height: 1px;
+    position: absolute;
+    bottom: -25px;
+}
+
+.title_skills {
+    margin-bottom: 60px;
+    font-size: 1.55em;
+}
+
+.title_progress {
+    margin-bottom: 60px;
+    font-size: 1.45em;
+    letter-spacing: 3px;
+}
+
+.container__skill {
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid;*/
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 300px;
+    /*border: 1px solid;*/
+}
+
+.skill__img {
+    width: 7em;
+    height: 7em;
+    display: block;
+    /*background: #ccc;*/
+}
+
+.skill__bg {
+    position: relative;
+    z-index: 0;
+    margin: 2em 0;
+}
+
+.skill__bg:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /*background: #ccc;*/
+    background: #404040;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.skill__title {
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.skill__desc {
+    font: 400 0.875em/1.8 'Poppins', sans-serif;
+}
+
+.img__t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__progress {
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid;*/
+    flex-wrap: wrap;
+}
+
+.progress_bar {
+    /*border: 1px solid black;*/
+    height: 6px;
+    width: 43%;
+    min-width: 214px;
+    position: relative;
+    margin: 30px 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.progress {
+    background: #1957f3;
+    position: absolute;
+    height: 100%;
+    color: black;
+    text-align: center;
+    width: 0;
+    transition: width 3s;
+}
+
+.progress::before {
+    content: attr(data-progress);
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: -30px;
+    color: #fff;
+}
+
+.progress::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 5px solid #1957f3;
+    position: absolute;
+    top: -12px;
+    right: -4px;
+}
+
+.progress_title {
+    position: absolute;
+    top: -30px;
+}
+
+@media screen and (max-width: 319px) {
+    .container .title_skills {
+        margin-bottom: 60px;
+        font-size: 1em;
+    }
+
+    .container .title_progress {
+        font-size: 0.8em;
+    }
+
+    .skill__title {
+        font-size: 0.8em;
+    }
+
+    .container__skill {
+        padding: 0 calc(50% - 150px);
+    }
+
+    .skill {
+        margin-bottom: 20px;
+    }
+
+    .progress_bar {
+        width: 100%;
+    }
+
+    .progress_title, .progress::before {
+        top: -23px;
+        font-size: 0.8em;
+    }
+
+    .progress::after {
+        top: -7px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+
+    .container .title_skills {
+        margin-bottom: 60px;
+        font-size: 1em;
+    }
+
+    .container .title_progress {
+        font-size: 0.8em;
+    }
+
+    .skill__title {
+        font-size: 0.8em;
+    }
+
+    .container__skill {
+        padding: 0 calc(50% - 150px);
+    }
+
+    .skill {
+        margin-bottom: 20px;
+    }
+
+    .progress_bar {
+        width: 100%;
+    }
+
+    .progress_title, .progress::before {
+        top: -23px;
+        font-size: 0.8em;
+    }
+
+    .progress::after {
+        top: -7px;
+    }
+
+}
+/*768px*/
+@media screen and (min-width: 48em) {
+    .container{
+        margin: 0 4%;
+    }
+
+    .container .title_skills {
+        margin-bottom: 60px;
+        font-size: 1.15em;
+    }
+
+    .container .title_progress {
+        font-size: 1em;
+    }
+
+    .skill__title {
+        font-size: 1em;
+    }
+
+    .progress_bar {
+        width: 43%;
+    }
+
+    .progress_title, .progress::before {
+        top: -30px;
+        font-size: 1em;
+    }
+
+    .progress::after {
+        top: -12px;
+    }
+}
+
+/*794px*/
+@media screen and (min-width: 49.625em) {
+    .container__skill {
+        padding: 0 calc(50% - 325px);
+    }
+
+    .skill {
+        margin-bottom: 20px;
+    }
+}
+
+/*1024px*/
+@media screen and (min-width: 64em) {
+    .container{
+        margin: 0 8%
+    }
+
+    .container .title_skills {
+        margin-bottom: 60px;
+        font-size: 1.35em;
+    }
+
+    .container .title_progress {
+        font-size: 1.15em;
+    }
+
+    .skill__title {
+        font-size: 1.15em;
+    }
+}
+
+/*1241px*/
+@media screen and (min-width: 77.5em) {
+    .container__skill {
+        padding: 0;
+    }
+
+    .skill {
+        margin-bottom: 0;
+    }
+}
+
+/*1366px*/
+@media screen and (min-width: 85.375em) {
+    .container{
+        margin: 0 12%
+    }
+
+    .container .title_skills {
+        margin-bottom: 60px;
+        font-size: 1.55em;
+    }
+
+    .container .title_progress {
+        margin-bottom: 60px;
+        font-size: 1.45em;
+        letter-spacing: 3px;
+    }
+
+    .skill__title {
+        font-size: 1.35em;
+    }
+}
+
+/*1920px - 2560px*/
+@media screen and (min-width: 120em) and (max-width: 2560px){
+    .container{
+        margin: 0 18%
+    }
+
+    .container .title_skills {
+        margin-bottom: 60px;
+        font-size: 1.85em;
+    }
+
+    .container .title_progress {
+        margin-bottom: 60px;
+        font-size: 1.55em;
+        letter-spacing: 3px;
+    }
+
+    .skill__title {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .container{
+        margin: 0 18%
+    }
+
+    .container .title_skills {
+        margin-bottom: 60px;
+        font-size: 1.85em;
+    }
+
+    .container .title_progress {
+        margin-bottom: 60px;
+        font-size: 1.55em;
+        letter-spacing: 3px;
+    }
+
+    .skill__title {
+        font-size: 1.5em;
+    }
+}

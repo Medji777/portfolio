@@ -1,7 +1,7 @@
 import React from 'react';
 import Wrapper from "../../Wrapper/Wrapper";
 import Skill from "./Skill/Skill";
-import Progress from "./Progress/Progress";
+import ProgressContainer from "./Progress/ProgressContainer";
 import Loader from "../../../common/Loader/Loader";
 import s from './Skills.module.css';
 
@@ -16,7 +16,7 @@ const Skills = ({skills,progress,isFetching,Loading,...props}) => {
                 </div>}
                 <h3 className={s.title_progress}>Progress</h3>
                 <div className={s.container__progress}>
-                    {progress.map((p,i) => <Progress key={i} title={p.title} prog={p.progress} />)}
+                    {progress.map((p,i) => <ProgressContainer key={i} title={p.title} progress={p.progress} />)}
                 </div>
             </div>
         </Wrapper>

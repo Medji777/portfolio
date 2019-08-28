@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="lds-gears" preserveAspectRatio="xMidYMid" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(50 50)">
+<g transform="translate(-19 -19) scale(.6)">
+<g transform="rotate(334.878)">
+<animateTransform attributeName="transform" begin="0s" dur="1.5s" keyTimes="0;1" repeatCount="indefinite" type="rotate" values="0;360"/>
+<path d="m37.35-7h10v14h-10a38 38 0 0 1 -5.9897 14.46l7.0711 7.0711-9.8995 9.8995-7.0711-7.0711a38 38 0 0 1 -14.46 5.9897l4e-16 10h-14l-1e-15 -10a38 38 0 0 1 -14.46 -5.9897l-7.0711 7.0711-9.8995-9.8995 7.0711-7.0711a38 38 0 0 1 -5.9897 -14.46l-10 1e-15v-14l10-6e-16a38 38 0 0 1 5.9897 -14.46l-7.0711-7.0711 9.8995-9.8995 7.0711 7.0711a38 38 0 0 1 14.46 -5.9897l-2e-15 -10h14l2e-15 10a38 38 0 0 1 14.46 5.9897l7.0711-7.0711 9.8995 9.8995-7.0711 7.0711a38 38 0 0 1 5.9897 14.46m-37.35-16a23 23 0 1 0 0 46 23 23 0 1 0 0 -46" fill="#afaca9"/>
+</g>
+</g>
+<g transform="translate(19 19) scale(.6)">
+<g transform="rotate(2.6222)">
+<animateTransform attributeName="transform" begin="-0.125s" dur="1.5s" keyTimes="0;1" repeatCount="indefinite" type="rotate" values="360;0"/>
+<path d="m37.35-7h10v14h-10a38 38 0 0 1 -5.9897 14.46l7.0711 7.0711-9.8995 9.8995-7.0711-7.0711a38 38 0 0 1 -14.46 5.9897l4e-16 10h-14l-1e-15 -10a38 38 0 0 1 -14.46 -5.9897l-7.0711 7.0711-9.8995-9.8995 7.0711-7.0711a38 38 0 0 1 -5.9897 -14.46l-10 1e-15v-14l10-6e-16a38 38 0 0 1 5.9897 -14.46l-7.0711-7.0711 9.8995-9.8995 7.0711 7.0711a38 38 0 0 1 14.46 -5.9897l-2e-15 -10h14l2e-15 10a38 38 0 0 1 14.46 5.9897l7.0711-7.0711 9.8995 9.8995-7.0711 7.0711a38 38 0 0 1 5.9897 14.46m-37.35-16a23 23 0 1 0 0 46 23 23 0 1 0 0 -46" fill="#ff2c75"/>
+</g>
+</g>
+</g>
+</svg>

@@ -132,6 +132,7 @@
         min-height: 2em;
         top: calc(1em - 0%);
         position: fixed;
+        right: 10px;
     }
 
     .menu_btn.menu_btn_active {
@@ -156,7 +157,7 @@
 
     .nav__list.nav__list_active {
         flex-direction: column;
-        min-height: 30%;
+        /*min-height: 30%;*/
         min-width: 100%;
         width: auto;
         position: absolute;
@@ -184,6 +185,7 @@
         min-height: 2em;
         top: calc(1em - 0%);
         position: fixed;
+        right: 10px;
     }
 
     .menu_btn.menu_btn_active {
@@ -208,7 +210,7 @@
 
     .nav__list.nav__list_active {
         flex-direction: column;
-        min-height: 30%;
+        /*min-height: 30%;*/
         min-width: 100%;
         width: auto;
         position: absolute;
@@ -221,6 +223,7 @@
         min-height: 2em;
         padding: 22.5px 0;
         top: 0;
+        right: 5px;
     }
 
     .menu_btn.menu_btn_active {
@@ -250,6 +253,7 @@
 @media screen and (min-width: 1366px){
     .menu_btn {
         width: 5vw;
+        right: 0;
     }
 
     .menu_btn.menu_btn_active {

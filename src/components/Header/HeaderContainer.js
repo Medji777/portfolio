@@ -1,11 +1,10 @@
-import React, {useState,useContext} from 'react';
+import React, {useState} from 'react';
 import Header from "./Header";
-import {Context} from "../../Context/Context";
+import routes from "../MainSections/routes";
 
 const HeaderContainer = () => {
 
     const [isOpen, setIsOpen] = useState(false);
-    const {menuLink} = useContext(Context);
 
     const openMenu = () => {
         setIsOpen(!isOpen);
@@ -19,7 +18,7 @@ const HeaderContainer = () => {
 
     const elemClass = (elem, activeElement) => isOpen ? `${elem} ${activeElement}` : elem;
     
-    return <Header elemClass={elemClass} menuLink={menuLink} openMenu={openMenu} onCloseClick={onCloseClick}/>
+    return <Header elemClass={elemClass} menuLink={routes} openMenu={openMenu} onCloseClick={onCloseClick}/>
 };
 
 export default HeaderContainer;

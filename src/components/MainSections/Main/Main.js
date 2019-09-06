@@ -15,7 +15,7 @@ const Main = ({social, routes, onStart3d, onStop3d, config}) => {
                     <div className={s.title}>
                         <h3>Hello!</h3>
                         <h2>My name is <span>Vladimir Dergachev</span></h2>
-                        <h1>I Front-end developer</h1>
+                        <h1>I'm Front-end developer</h1>
                         <div className={s.icon}>
                             {Object.keys(social).map(icon => <a href={social[icon]} key={icon} target='_blank'
                                                                 rel='noreferrer noopener'><FontAwesomeIcon

@@ -28,6 +28,12 @@ const MainContainer = (props) => {
                 particles: {...config.particles, count: 50}
             }
         }
+        if(screen !== null && screen >= 1920){
+            return {...config,
+                cameraControls: {...config.cameraControls, enabled: true},
+                particles: {...config.particles, count: 250}
+            }
+        }
         return config
     };
 

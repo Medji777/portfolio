@@ -15,7 +15,7 @@ const MainSections = ({location}) => {
     return transitions.map(({ item, props: transition, key }) => (
         <animated.div className={'layout'} key={key} style={{...transition}}>
             <Switch location={item}>
-                {routes.map((r, i) => <Route key={i} exact={r.exact} path={r.path} render={r.render(routes)}/>)}
+                {routes.map(r => <Route key={r.id} exact={r.exact} path={r.path} render={r.render(routes)}/>)}
                 <Route render={() => <NotFound/>}/>
             </Switch>
         </animated.div>

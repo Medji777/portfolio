@@ -2,7 +2,7 @@ import React from 'react';
 import Mouse3DHoc from "../../Mouse3dHOC/Mouse3dHoc";
 import s from './NotFound.module.css';
 
-const NotFound = ({onStart3d, onStop3d}) => {
+const NotFound = ({onStart3d,onStop3d}) => {
     return (
         <section className={`${s.notfound} ${s.main}`}>
             <div className={s.container}>

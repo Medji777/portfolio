@@ -14,18 +14,24 @@
     align-self: center;
 }
 
-.container h3 {
+.container h3, .container h4 {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 80px;
-    /*font-size: 1.25em;*/
-    font: 700 30px/1.2 'Josefin Sans', sans-serif;
-    letter-spacing: 5px;
     position: relative;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.container h3:after {
+.container h3 {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    font-size: 1.875em;
+    letter-spacing: 5px;
+}
+
+.container h3:after, .container h4:after {
     content: '';
     display: block;
     background: #e9548d;
@@ -33,6 +39,9 @@
     height: 1px;
     position: absolute;
     bottom: -30px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contact {
@@ -44,23 +53,9 @@
 }
 
 .container h4 {
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
     margin-bottom: 60px;
-    font: 700 1.25em/1.2 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
     text-align: center;
     letter-spacing: 3px;
-    position: relative;
-    text-transform: capitalize;
-}
-
-.container h4:after {
-    content: '';
-    display: block;
-    background: #e9548d;
-    width: 55px;
-    height: 1px;
-    position: absolute;
-    bottom: -30px;
 }

@@ -51,17 +51,9 @@ const progress = [
     {title: 'NPM | GIT', progress: 89}
 ];
 
-const menuLink = [
-    {id: 1, exact: true, path: '/', title: 'Main'},
-    {id: 2, exact: false, path: '/skills', title: 'Skills'},
-    {id: 3, exact: false, path: '/projects', title: 'Projects'},
-    {id: 4, exact: false, path: '/contacts', title: 'Contacts'},
-];
-
 const AppContext = ({children}) => {
     return (
         <Context.Provider value={{
-            menuLink,
             social,
             projects,
             progress

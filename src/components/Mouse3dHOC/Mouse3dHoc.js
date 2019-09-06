@@ -7,6 +7,7 @@ const Mouse3DHoc = (Components) => (props) => {
         const eCard = {
             perspective: 1000,
             scale: 1.05,
+            coordsScope: 15,
             scope(oS) {
                 let s = null;
                 switch (oS) {
@@ -21,7 +22,7 @@ const Mouse3DHoc = (Components) => (props) => {
                     default:
                         break;
                 }
-                return +(s / 15).toFixed(2)
+                return +(s / this.coordsScope).toFixed(2)
             }
         };
         style.transform = `perspective(${eCard.perspective}px) rotateX(${eCard.scope('Y')}deg) rotateY(${eCard.scope('X')}deg) scale3d(1.05,1.05,1.05)`;

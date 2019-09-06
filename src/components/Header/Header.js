@@ -11,7 +11,7 @@ const Header = ({elemClass,openMenu,menuLink,onCloseClick}) => {
             <div className={elemClass(s.wrapper, s.wrapper_active)}>
                 <ul className={elemClass(s.nav__list, s.nav__list_active)}>
                     {menuLink.map(link => <li key={link.id}>
-                        <NavLink exact={link.exact} to={link.path} activeClassName={s.active__link}
+                        <NavLink exact={link.exactNav} to={link.path} activeClassName={s.active__link}
                                  onClick={onCloseClick}>{link.title}</NavLink>
                     </li>)}
                 </ul>

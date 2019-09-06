@@ -11,11 +11,10 @@ const SkillsContainer = (props) => {
 
     useEffect(() => {
         setIsFetching(true);
-        const abortController = new AbortController();
         let componentUnmounted = false;
         let delay = null;
         (async () => {
-            let res = await fetch('/data/skills.json', {signal: abortController.signal});
+            let res = await fetch('./data/skills.json');
             res = await res.json();
             if (componentUnmounted) return Promise.resolve(true);
             setSkills(res);
@@ -25,7 +24,6 @@ const SkillsContainer = (props) => {
         })();
         return () => {
             componentUnmounted = true;
-            abortController.abort();
             clearTimeout(delay)
         }
     }, []);

@@ -38,6 +38,7 @@
     transition: all .5s;
     align-items: center;
     text-align: center;
+    transform: perspective(1000px);
 }
 
 .wrapper h2 {
@@ -53,16 +54,6 @@
     transition: transform .5s;
 }
 
-.wrapper h2::after {
-    content: '404 not found';
-    display: inline-block;
-    position: fixed;
-    color: #070707;
-    text-transform: capitalize;
-    transform: perspective(1000px) translateX(3px) translateY(2px) translateZ(0px);
-    z-index: -1;
-}
-
 .wrapper span {
     position: absolute;
     width: 100%;
@@ -74,22 +65,42 @@
     letter-spacing: 5px;
     z-index: -1;
     filter: drop-shadow(7px 7px 4px black);
-    transform: scale(1,1.1) translate(7px, 2px);
+    transform: scale(1,1.05) translate(7px, 2px);
+    top: 0;
+    left: 0;
 }
 
 @media screen and (max-width: 319px){
     .wrapper h2,.wrapper span{
         font-size: var(--font-size-min);
     }
+
+    .wrapper h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .wrapper span {
+        filter: drop-shadow(3px 3px 2px black);
+    }
 }
 
 @media screen and (min-width: 320px){
     .wrapper h2,.wrapper span {
-        font-size: var(--font-size-middle);
+        font-size: var(--font-size-min);
+    }
+
+    .wrapper h2 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .wrapper span {
+        filter: drop-shadow(3px 3px 2px black);
     }
 }
 
-@media screen and (min-width: 653px){
+@media screen and (min-width: 414px){
     .wrapper h2,.wrapper span {
         font-size: var(--font-size-middle);
     }
@@ -110,6 +121,15 @@
 @media screen and (min-width: 1024px){
     .wrapper h2,.wrapper span {
         font-size: var(--font-size-middle-min);
+    }
+
+    .wrapper h2 {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    .wrapper span {
+        filter: drop-shadow(7px 7px 4px black);
     }
 }
 

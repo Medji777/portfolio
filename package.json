@@ -2,7 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Medji777.github.io/portfolio/",
+  "homepage": "https://medji777.github.io/portfolio",
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.4.1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-brands-svg-icons": "^5.10.2",

@@ -39,6 +39,9 @@
     height: 1px;
     position: absolute;
     bottom: -25px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-55%, -50%);
 }
 
 .title_skills {

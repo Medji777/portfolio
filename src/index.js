@@ -9,7 +9,7 @@ const App = lazy(() => import ("./App"));
 
 ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>
     <Suspense fallback={<Loader wrap={{minHeight: '100vh',background: '#404040'}} loader={{width: '15em'}}/>}>
-        <App />
+        <App/>
     </Suspense>
 </Router>, document.getElementById('root'));
 

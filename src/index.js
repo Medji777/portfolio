@@ -5,7 +5,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import Loader from "./common/Loader/Loader";
 import './index.css';
 
-const App = lazy(() => import ("./App"));
+const App = lazy(() => import ("./App").then((v)=>v));
 
 ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>
     <Suspense fallback={<Loader wrap={{minHeight: '100vh',background: '#404040'}} loader={{width: '15em'}}/>}>
@@ -13,7 +13,4 @@ ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>
     </Suspense>
 </Router>, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

@@ -20,7 +20,7 @@
     "react-router-dom": "^5.3.4",
     "react-scripts": "3.0.1",
     "react-spring": "^8.0.27",
-    "three": "^0.107.0"
+    "three": "^0.125.0"
   },
   "scripts": {
     "start": "react-scripts start",
